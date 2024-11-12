@@ -745,6 +745,29 @@
                                     display: none !important;
                                 }
 
+                                .global-search {
+                                	border: 0;
+                                	background: unset;
+                                }
+                                
+                                .field-button-wrapper {
+                                	display: grid;
+                                	grid-template-columns: 1fr 0.15fr;
+                                	column-gap: 25px;
+                                }
+                                
+                                .global-search .search-field {
+                                	width: 100%;
+                                	border-radius: 5px;
+                                }
+                                
+                                
+                                .global-search .search-submit button {
+                                	background: #484d47;
+                                	color: unset;
+                                	border-radius: 5px;
+                                }
+                                
                                 @media screen and (min-width: 720px) {
                                     .page-section-content-home-index .secondary nav.content-navigation>ul>li {
                                         margin-left: unset !important;
