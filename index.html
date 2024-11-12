@@ -873,6 +873,16 @@
                                         margin-left: unset !important;
                                     }
                                 }
+                                
+                                @media screen and (max-width: 720px) {
+                                    #page-header > div > div > a > img {
+                                        width: unset !important;
+                                    }
+                                    
+                                    header#page-header::before {
+                                        top: 120px;
+                                    }
+                                }
 
                                 @media screen and (max-width: 781px) {
                                     .slider-button a {
