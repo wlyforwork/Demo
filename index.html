@@ -835,9 +835,22 @@
                                     text-align: center;
                                     align-content: center;
                                     color: white;
-                                    padding: 10px;
+                                }
+                                
+                                .btninfo > img, .btninfo > div > img {
+                                    border: 0;
+                                    object-fit: cover;
+                                    height: 100%;
+                                    width: 100%;
+                                    border-radius: 5px;
+                                    filter: opacity(0.4);
                                 }
 
+                                .btnText {
+                                    position: relative;
+                                    bottom: 35px;
+                                }
+                                    
                                 #main-navigation > ul > li > a > span > span.label, #main-navigation > ul > li > button > span.label {
                                     color: #c21975 !important;
                                     font-weight: bold;
