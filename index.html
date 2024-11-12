@@ -623,32 +623,33 @@
                                  }
 
                                 .global-search {
-                                    	border: 0;
-                                    	background: unset;
-                                    }
+                                    border: 0;
+                                    background: unset;
+                                }
                                     
-                                    .field-button-wrapper {
-                                    	display: grid;
-                                    	grid-template-columns: 1.5fr 0.1fr;
-                                    	column-gap: 15px;
-                                    }
+                                .global-search .field-button-wrapper.field-button-wrapper {
+                                    display: grid !important;
+                                    grid-template-columns: 1.5fr 0.1fr;
+                                    column-gap: 15px;
+                                }
+                                
+                                .global-search .search-field {
+                                    width: 100%;
+                                    border-radius: 5px;
+                                }
                                     
-                                    .global-search .search-field {
-                                    	width: 100%;
-                                    	border-radius: 5px;
-                                    }
-                                    
-                                    .global-search .search-submit {
-                                    	width: unset;
-                                    }
-                                    
-                                    .global-search .search-submit button {
-                                    	background: #484d47;
-                                    	color: unset;
-                                    	border-radius: 5px;
-                                    	padding: 15px;
-                                    	margin: unset;
-                                    }
+                                .global-search .search-submit {
+                                    width: unset;
+                                }
+                                
+                                .global-search .search-submit button {
+                                    background: #484d47;
+                                    color: unset;
+                                    border-radius: 5px;
+                                    padding: 15px;
+                                    margin: unset;
+                                }
+                                
                                 .wrapper {
                                     width: 100%;
                                     overflow: hidden;
