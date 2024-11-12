@@ -617,9 +617,36 @@
                                  #page-header > div > div > a > img {
                                     border: 0;
                                     margin-top: -2px;
-                                    width: 80%;
                                  }
 
+                                header#page-header::before { 
+                                    position: absolute;
+                                    content: '';
+                                    top: 120px;
+                                    z-index: 100;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 40vh;
+                                    width: 100%;
+                                    background: linear-gradient(271deg,#7c0378,#bf165e,#e47000);
+                                    clip-path: polygon(0 0, 100% 0, 100% 4%, 0 9%);
+                                }   
+
+                                section.page-section-header.page-section-header-home.page-section-header-home-index.has-backdrop-image::after { 
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    /* z-index: 1; */
+                                    width: 0;
+                                    height: 0;
+                                    border-style: solid;
+                                    border-width: 1.125rem 50vw .7rem 51vw;
+                                    border-color: transparent #FCFCFC #FCFCFC transparent;
+                                    z-index: 3;
+                                    bottom: 0;
+                                }   
+                                
                                 .page-section-header-home-index.has-backdrop-image {
                                     background-image: url(https://www.cityu.edu.hk/sites/g/files/asqsls3821/files/styles/crop_cityu_headline_1465_532/public/2019-02/C01-084_2_0.jpg?h=b18f6b74&itok=WAM1MEei);
                                 }
@@ -633,7 +660,7 @@
                                 }
                                 
                                 #page-header .primary {
-                                	padding: 10px 0;
+                                	padding: 10px 10px 20px 10px;
                                  }
                                 
                                 #page-header .primary ul.header-tools {
