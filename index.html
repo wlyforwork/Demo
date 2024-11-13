@@ -651,7 +651,7 @@
                                 }
                                 
                                 h1.title {
-                                    font-size: 26px;
+                                    font-size: min(max(3.5vw, 18px), 26px);
                                  }
 
                                 h2 { 
@@ -691,6 +691,7 @@
                                 
                                 #page-header .primary {
                                 	padding: 10px 10px 20px 10px;
+                                    background-color: white !important;
                                  }
                                 
                                 #page-header .primary ul.header-tools {
@@ -897,7 +898,7 @@
                                     }  
                                 }
 
-                                @media screen and (max-width: 781px) {
+                                @media screen and (max-width: 1171px) {
                                     .slider-button a {
                                         bottom: 5px;
                                         right: 15px;
@@ -920,7 +921,18 @@
                                         margin-bottom: 0;
                                     }
                                 }
-                                
+
+                                 @media screen and (max-width: 480px) {
+                                    #page-header > div > div > a > img {
+                                        margin-top: -10px;
+                                    }
+                                     
+                                    header#page-header::before {
+                                        top: 140px;
+                                        height: 30vh;
+                                    } 
+                                }
+                                     
                                 /* prev css re-apply */
                                 .page-section-content-home-index .secondary nav.content-navigation>ul>li, .page-section-home #main-navigation>ul li:first-child, .page-section-home #main-navigation>ul li:first-child {
                                     margin-left: unset !important;
