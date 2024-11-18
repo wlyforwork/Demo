@@ -84,7 +84,7 @@
                 <a href="/pureportal/en/" class="logo">
                     
                         <span class="sr-only">CityU Scholars Home</span>
-                        <img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/CityU_Scholars_logo1.png" alt="CityU Scholars Logo"/>
+                        <img src="https://template.cityu.edu.hk/template/logo/CityU/CityU_Vertical_Logo_CMYK.svg" alt="CityU Scholars Logo"/>
                     
                 </a>
                 
@@ -611,7 +611,7 @@
                                 min-height: 230px !important;
                             }
 
-                            header#page-header::before { 
+                            /*header#page-header::before { 
                                 position: absolute;
                                 content: '';
                                 top: 110px;
@@ -623,12 +623,16 @@
                                 width: 100%;
                                 background: linear-gradient(271deg,#7c0378,#bf165e,#e47000);
                                 clip-path: polygon(0 0, 100% 0, 100% 4%, 0 9%);
-                            }
+                            }*/
 
-                            header#page-header > div > div > a > img {
-                                border: 0;
-                                margin-top: -2px;
-                                width: 90%;
+                            .logo > img {
+                                position: absolute;
+                                z-index: 900;
+                                top: 15px;
+                                left: 0;
+                                max-width: 150px;
+                                width: calc(100% - 150px);
+                                margin-left: 25px;
                             }
 
                             .page-section-header-home-index.has-backdrop-image {
@@ -636,12 +640,19 @@
                             }
 
                             #page-header .primary {
-                                padding: 10px 10px 20px 10px;
-                                background-color: white !important;
+                                padding: 0;
+                            }
+
+                            #page-header .primary .container {
+                                max-width: 100% !important;
                             }
 
                             #page-header .primary ul.header-tools {
-                                top: -10px;
+                                top: 0;
+                            }
+
+                            .page-section-header-home-index:not(.improvedLayout) {
+                                background-position: unset !important;
                             }
 
                             .page-section-header-home-index:not(.improvedLayout) .container .global-search-wrapper:not(.improvedLayout) {
@@ -724,6 +735,18 @@
 
                             /*Content Layout*/
 
+                            .page-section {
+                                padding: 20px 0 !important;
+                                margin-top: 0 !important;
+                            }
+
+                            .container-inner {
+                                display: grid; 
+                                grid-template-columns: 1fr 0.8fr; 
+                                column-gap: 20px; 
+                                height: 200px;
+                            }
+
                             .wrapper {
                                 width: 100%;
                                 overflow: hidden;
@@ -742,22 +765,24 @@
                                 border-radius: 5px;
                                 height: 100%;
                                 width: 100%;
-                                object-fit: contain;
+                                object-fit: cover;
                             }
 
                             .slick-list, .slick-track {
-                                height: 250px;
+                                height: 200px;
                             }
 
                             .slick-dots {
                                 border: 0px;
                                 width: fit-content;
                                 text-align: unset;
-                                bottom: 5px;
+                                bottom: 0 !important;
+                                margin-left: 5px;
                             }
 
                             .slick-dotted.slick-slider {
-                                margin-bottom: 10px;
+                                margin-bottom: 0 !important;
+                                height: 100% !important;
                             }
                                                         
                             .slick-dots li button:before {
@@ -797,7 +822,7 @@
                             .button-container {
                                 display: inline-grid;
                                 grid-template-columns: repeat(2, 1fr);
-                                grid-template-rows: repeat(2, 120px);
+                                grid-template-rows: repeat(2, 95px);
                                 gap: 10px;
                                 width: 100%;
 
@@ -822,7 +847,7 @@
 
                             .btnText {
                                 position: relative;
-                                bottom: 46px;
+                                bottom: 36px;
                                 background: #981f61d4;
                                 padding: 5px 0;
                                 border-radius: 0 0 5px 5px;
@@ -846,7 +871,6 @@
 
                             #sdg_banner .sdg_info {
                                 width: 100%;
-                                padding-bottom: 15px;
                             }
 
                             #sdg_banner ul.sdg_icons {
@@ -910,10 +934,6 @@
                                 .slick-list, .slick-track {
                                     height: fit-content !important;
                                 }
-
-                                .slick-dotted.slick-slider {
-                                    margin-bottom: 0;
-                                }
                             }
                                 
                             /* prev css re-apply */
@@ -950,7 +970,7 @@
                             }
                             </style>
 
-                            <div class="container-inner center" style="display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 20px; height: 250px;">
+                            <div class="container-inner">
                                 <div class="wrapper">
                                     <div class="custom-slideshow slick-slider slick-dotted">
                                         <div class="slick-slide-container">
