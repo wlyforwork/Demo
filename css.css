@@ -4,7 +4,7 @@
 
 /* Backgrounds image */
 #page-header .primary {
-  background-image: url(https://scholarsdev.esu.cityu.edu.hk/pureportal/skin/headerBackgroundImage/);
+  background-image: url(https://www.cityu.edu.hk/sites/g/files/asqsls3821/…/2019-02/C01-084_2_0.jpg?h=b18f6b74&itok=WAM1MEei);
 }
 
 #search_banner {
@@ -15,11 +15,6 @@
   #page-header .primary-right-background {
     background-image: none;
   }
-}
-
-.page-section-header-home-index.has-backdrop-image,
-.page-section-header-home-index.improvedLayout.has-backdrop-image {
-  background-image: url(https://scholarsdev.esu.cityu.edu.hk//pureportal/skin/searchBackdropImage/);
 }
 
 /* Backgrounds color */
@@ -190,7 +185,7 @@ rendering_person_personsocialmediaorcidrendererportal - is here to support backw
 }
 
 .page-section-header-home-index.improvedLayout, .improvedLayout-section .page-section.page-section-home.page-section-home-index.improvedLayout {
-  background-image: url(/pureportal/skin/headerBackgroundImage/);
+  background-image: url(https://www.cityu.edu.hk/sites/g/files/asqsls3821/…/2019-02/C01-084_2_0.jpg?h=b18f6b74&itok=WAM1MEei);
   background-color: #981f61;
 }
 
