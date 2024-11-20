@@ -625,26 +625,26 @@
                                 clip-path: polygon(0 0, 100% 0, 100% 4%, 0 9%);
                             }*/
 
-                            .logo > img {
-                                position: absolute;
-                                z-index: 900;
-                                top: 15px;
-                                left: 0;
-                                max-width: 150px;
-                                width: calc(100% - 150px);
-                                margin-left: 25px;
+                            #page-header .primary .logo img {
+                                max-height: 88px;
+                                width: 90%;
+                                margin-top: 20px;
                             }
 
                             .page-section-header-home-index.has-backdrop-image {
                                 background-image: url(https://www.cityu.edu.hk/sites/g/files/asqsls3821/files/styles/crop_cityu_headline_1465_532/public/2019-02/C01-084_2_0.jpg?h=b18f6b74&itok=WAM1MEei);
+                                top: -110px;
+                                margin-bottom: -110px;
                             }
 
                             #page-header .primary {
                                 padding: 0;
+                                background-color: transparent !important;
                             }
 
                             #page-header .primary .container {
                                 max-width: 100% !important;
+                                z-index: 1;
                             }
 
                             #page-header .primary ul.header-tools {
@@ -742,9 +742,9 @@
 
                             .container-inner {
                                 display: grid; 
-                                grid-template-columns: 1fr 0.8fr; 
-                                column-gap: 20px; 
-                                height: 200px;
+                                grid-template-columns: repeat(2, 1fr); 
+                                column-gap: 15px; 
+                                max-height: 200px;
                             }
 
                             .wrapper {
@@ -753,6 +753,8 @@
                                 position: relative;
                                 border-radius: 5px;
                                 box-shadow: 2px 2px 8px 0px #c230800d;
+                                max-height: 200px;
+                                height: fit-content;
                             }
 
                             .slick-slide-container {
@@ -766,10 +768,11 @@
                                 height: 100%;
                                 width: 100%;
                                 object-fit: cover;
+                                max-height: 200px;
                             }
 
                             .slick-list, .slick-track {
-                                height: 200px;
+                                max-height: 200px;
                             }
 
                             .slick-dots {
@@ -847,7 +850,7 @@
 
                             .btnText {
                                 position: relative;
-                                bottom: 36px;
+                                bottom: 38px;
                                 background: #981f61d4;
                                 padding: 5px 0;
                                 border-radius: 0 0 5px 5px;
@@ -891,19 +894,18 @@
                             }
 
                             @media screen and (max-width: 480px) {
-                                #page-header > div > div > a > img {
-                                    margin-top: -10px;
-                                }
-                                
                                 header#page-header::before {
                                     top: 140px;
                                     height: 30vh;
                                 } 
                             }
 
-                            @media screen and (max-width: 720px) {
-                                #page-header > div > div > a > img {
-                                    width: unset !important;
+                            @media only screen and (max-width: 720px) {
+                                #page-header .primary .logo img {
+                                    margin-top: 10px;
+                                    max-width: unset !important;
+                                    max-height: 88px !important;
+                                    height: unset !important;
                                 }
                                 
                                 header#page-header::before {
@@ -915,8 +917,8 @@
                                     gap: 7px;
                                 }  
                             }
-
-                            @media screen and (max-width: 1171px) {
+                            
+                            @media screen and (max-width: 945px) {
                                 .slider-button a {
                                     bottom: 5px;
                                     right: 15px;
@@ -929,10 +931,29 @@
                                     flex-direction: column !important;
                                     height: unset !important;
                                     row-gap: 15px !important;
+                                    max-height: fit-content;
+                                }
+
+                                .wrapper {
+                                    max-height: unset !important;
                                 }
 
                                 .slick-list, .slick-track {
                                     height: fit-content !important;
+                                    max-height: unset !important;
+                                }
+
+                                .slick-slide-container img {
+                                    height: fit-content !important;
+                                    max-height: unset !important;
+                                }
+
+                                .button-container {
+                                    grid-template-rows: repeat(2, 120px);
+                                }
+
+                                .btnText {
+                                    bottom: 45px;
                                 }
                             }
                                 
