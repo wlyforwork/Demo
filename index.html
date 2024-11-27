@@ -704,13 +704,13 @@
                                 width: 100%;
                             }
                             
-                            .page-section-header-home-index:not(.improvedLayout) .container {    
-                                max-width: 1170px !important;
+                            .page-section-header-home-index:not(.improvedLayout) .container {
+                                max-width: unset !important;
                                 width: 100%;
                                 min-width: unset !important;
                                 position: absolute;
-                                top: 160px;
-                                left: 45px;
+                                top: 205px;
+                                padding: 0;
                             }
 
                             /*section.page-section-header.page-section-header-home.page-section-header-home-index.has-backdrop-image::after { 
@@ -743,7 +743,7 @@
                             }
 
                             .global-search-wrapper {
-                                max-width: 350px;
+                                max-width: 405px;
                                 height: fit-content;
                                 border-radius: 5px;
                                 padding: 10px;
@@ -754,6 +754,7 @@
                                 column-gap: 15px;
                                 align-items: center;
                                 box-shadow: 1px 2px 6px 0px #ffffff;
+                                margin-left: 433px
                             }
              
                             .global-search-wrapper > #main-search {
@@ -1042,6 +1043,14 @@
 
                                 .btnText {
                                     bottom: 45px;
+                                }
+
+                                .page-section-header-home-index:not(.improvedLayout) {
+                                    background-size: 215%;
+                                }
+
+                                .global-search-wrapper {
+                                    margin-left: unset !important;
                                 }
                             }
                                 
