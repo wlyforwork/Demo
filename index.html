@@ -606,7 +606,7 @@
 
                             /*Header Layout*/
 
-                            section.page-section-header-home-index {
+                            .page-section-header-home-index {
                                 min-height: 300px !important;
                             }
 
@@ -660,7 +660,7 @@
                                 padding: 3px 10px;
                             }
 
-                            #page-header .primary .logo img {
+                            .primary .logo img {
                                 max-height: 88px;
                                 width: 90%;
                                 margin-bottom: -10px;
@@ -982,16 +982,41 @@
                                 }
                             }
 
+                            @media screen and (max-width: 680px) and (min-width: 581px) {
+                                section.page-section-header-home-index {
+                                    min-height: calc(270px - 6vw) !important;
+                                }
+                            }
+
+                            @media screen and (max-width: 580px) {
+                                #page-header .primary .container {
+                                        flex-direction: column;
+                                    }
+
+                                #page-header .primary .logo img {
+                                    max-height: unset !important;
+                                }
+                            }
+
+                            @media screen and (max-width: 580px) and (min-width: 481px) {
+                                section.page-section-header-home-index {
+                                    min-height: calc(245px - 8vw) !important;
+                                }
+                            }
+
                             @media screen and (max-width: 480px) {
                                 header#page-header::before {
                                     top: 140px;
                                     height: 30vh;
                                 } 
+
+                                section.page-section-header-home-index {
+                                    min-height: 170px !important;
+                                }
                             }
 
                             @media only screen and (max-width: 720px) {
-                                #page-header .primary .logo img {
-                                    margin-top: 10px;
+                                .primary .logo img {
                                     max-width: unset !important;
                                     max-height: 88px !important;
                                     height: unset !important;
@@ -1005,6 +1030,10 @@
                                     width: 100%;
                                     gap: 7px;
                                 }  
+
+                                .page-section-header-home-index {
+                                    min-height:  calc(290px - 3vw) !important;
+                                }
                             }
                             
                             @media screen and (max-width: 945px) {
@@ -1049,8 +1078,22 @@
                                     background-size: 215%;
                                 }
 
+                                .page-section-header-home-index:not(.improvedLayout) .container {
+                                    position: unset !important;
+                                }
+
                                 .global-search-wrapper {
                                     margin-left: unset !important;
+                                    max-width: unset !important;
+                                    box-shadow: 2px 2px 8px 0px #c230800d;
+                                }
+
+                                .page-section .page-section-header {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-end;
+                                    padding: 0;
+                                    top: 0;
                                 }
                             }
                                 
