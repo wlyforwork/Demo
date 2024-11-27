@@ -84,7 +84,7 @@
                 <a href="/pureportal/en/" class="logo">
                     
                         <span class="sr-only">CityU Scholars Home</span>
-                        <img src="https://template.cityu.edu.hk/template/logo/CityU/CityU_Vertical_Logo_CMYK.svg" alt="CityU Scholars Logo"/>
+                        <img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_RGB.jpg" alt="CityU Scholars Logo"/>
                     
                 </a>
                 
@@ -607,7 +607,7 @@
                             /*Header Layout*/
 
                             section.page-section-header-home-index {
-                                min-height: 380px !important;
+                                min-height: 300px !important;
                             }
 
                             /*header#page-header::before { 
@@ -624,14 +624,50 @@
                                 clip-path: polygon(0 0, 100% 0, 100% 4%, 0 9%);
                             }*/
 
+                            
+                            #page-header .primary ul.header-tools {
+                                position: unset;
+                                margin-top: unset !important;
+                                margin-bottom: unset !important;
+                                display: flex;
+                                font-size: 0.95rem;
+                                gap: 10px;
+                            }
+
+                            li.language-dropdown.dropdown {
+                                align-content: end;
+                            }
+
+                            #page-header .primary ul.header-tools>li {
+                                border-radius: 5px;
+                                border: 1px solid #c219753b !important;
+                            }
+
+                            li.help-and-faq > a span, li.help-and-faq > a i, .language_btn, .page-section-header-home-index .container h1, .page-section-header-home-index .container .search-menu a, .page-section-header-home-index .container .search-menu a:visited {
+                                color: #c21975 !important;
+                            }
+
+                            .global-search .search-field input {
+                                border: 1px solid #c219753b !important;
+                                color: #c21975 !important;
+                            }
+
+                            .global-search .search-submit button {
+                                background: #c21975 !important;
+                            }
+
+                            #page-header .primary ul.header-tools>li>a {
+                                padding: 3px 10px;
+                            }
+
                             #page-header .primary .logo img {
                                 max-height: 88px;
                                 width: 90%;
-                                margin-top: 20px;
+                                margin-bottom: -10px;
                             }
 
                             .page-section-header-home-index.has-backdrop-image {
-                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Campus_Photo_v4.png");
+                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Campus_Photo_v6.png");
                             }
 
                             #page-header .primary {
@@ -641,6 +677,14 @@
 
                             #page-header .primary .container {
                                 max-width: 100% !important;
+                                position: unset !important;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+                            #page-header .primary  .container:before, .container:after {
+                                content: none !important;
                             }
 
                             #page-header .primary ul.header-tools {
@@ -649,6 +693,11 @@
 
                             .page-section-header-home-index:not(.improvedLayout) {
                                 background-position: unset !important;
+                                justify-content: flex-start;
+                            }
+
+                            .page-section {
+                                margin-top: 20px;
                             }
 
                             .page-section-header-home-index:not(.improvedLayout) .container .global-search-wrapper:not(.improvedLayout) {
@@ -658,12 +707,10 @@
                             .page-section-header-home-index:not(.improvedLayout) .container {    
                                 max-width: 1170px !important;
                                 width: 100%;
-                                padding: 0 25px;
-                                display: flex;
-                                justify-content: flex-end;
-                                margin: 0;
-                                vertical-align: bottom;
-                                align-self: flex-end;
+                                min-width: unset !important;
+                                position: absolute;
+                                top: 160px;
+                                left: 45px;
                             }
 
                             /*section.page-section-header.page-section-header-home.page-section-header-home-index.has-backdrop-image::after { 
@@ -700,12 +747,13 @@
                                 height: fit-content;
                                 border-radius: 5px;
                                 padding: 10px;
-                                background: rgba(0, 0, 0, 0.5);
+                                background: white;
                                 display: grid;
                                 grid-template-rows: 0.25fr 1fr;
                                 grid-template-columns: 1fr 0.45fr;
                                 column-gap: 15px;
                                 align-items: center;
+                                box-shadow: 1px 2px 6px 0px #ffffff;
                             }
              
                             .global-search-wrapper > #main-search {
@@ -730,10 +778,6 @@
                                 
                             .global-search .search-submit {
                                 width: unset;
-                            }
-
-                            .search-bar-wrapper {
-                                margin-bottom: 10px;
                             }
 
                             .page-section-header-home-index {
@@ -1026,6 +1070,8 @@
                             .page-section .page-section-header {
                                 border-top: 0;
                                 border-bottom: 0;
+                                border-radius: 5px;
+                                margin: 0 25px;
                                 box-shadow: unset !important;
                                 /*box-shadow: 25px 25px 50px 0 white inset, 0px -20px 20px 0px white inset;*/
                             }
