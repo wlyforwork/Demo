@@ -604,6 +604,10 @@
                                 height: 20px;
                             }
 
+                            .language-dropdown {
+                                display: none !important;
+                            }
+
                             /*Header Layout*/
 
                             .page-section-header-home-index {
@@ -645,15 +649,16 @@
 
                             li.help-and-faq > a span, li.help-and-faq > a i, .language_btn, .page-section-header-home-index .container h1, .page-section-header-home-index .container .search-menu a, .page-section-header-home-index .container .search-menu a:visited {
                                 color: #c21975 !important;
+                                font-weight: bold;
                             }
 
                             .global-search .search-field input {
                                 border: 1px solid #c219753b !important;
-                                color: #c21975 !important;
+                                color: #a42667 !important;
                             }
 
                             .global-search .search-submit button {
-                                background: #c21975 !important;
+                                background: #a42667 !important;
                             }
 
                             #page-header .primary ul.header-tools>li>a {
@@ -692,7 +697,7 @@
                             }
 
                             .page-section-header-home-index:not(.improvedLayout) {
-                                background-position: unset !important;
+                                background-position: unset;
                                 justify-content: flex-start;
                             }
 
@@ -879,7 +884,7 @@
                                                         
                             .slick-dots li button:before {
                                 font-size: 35px;
-                                color: #981f61 !important;
+                                color: #a42667 !important;
                                 width: 15px;
                                 height: 15px;
                                 line-height: 15px;
@@ -901,7 +906,7 @@
                                 text-decoration: none;
                                 white-space: nowrap;
                                 color: white;
-                                background-color: #981f61;
+                                background-color: #a42667;
                                 transition: all .2s ease-in-out;
                                 cursor: pointer;
                                 user-select: none;
@@ -921,7 +926,7 @@
                             }
 
                             .btninfo {
-                                background: #981f61;
+                                background: #a42667;
                                 border-radius: 5px;
                                 text-align: center;
                                 align-content: center;
@@ -940,7 +945,7 @@
                             .btnText {
                                 position: relative;
                                 bottom: 38px;
-                                background: #981f61d4;
+                                background: #a42667cb;
                                 padding: 5px 0;
                                 border-radius: 0 0 5px 5px;
                                 font-size: min(max(3.5vw, 10px), 16px);
@@ -971,8 +976,10 @@
                             }  
 
                             #sdg_banner ul.sdg_icons>li img {
-                                width: 110px;
-                                height: 110px;
+                                width: 100%;
+                                max-width: 110px;
+                                height: 100%;
+                                max-height: 100%;
                                 border-radius: 5px;
                             }
 
@@ -985,16 +992,6 @@
                             @media screen and (max-width: 680px) and (min-width: 581px) {
                                 section.page-section-header-home-index {
                                     min-height: calc(270px - 6vw) !important;
-                                }
-                            }
-
-                            @media screen and (max-width: 580px) {
-                                #page-header .primary .container {
-                                        flex-direction: column;
-                                    }
-
-                                #page-header .primary .logo img {
-                                    max-height: unset !important;
                                 }
                             }
 
@@ -1011,7 +1008,16 @@
                                 } 
 
                                 section.page-section-header-home-index {
-                                    min-height: 170px !important;
+                                    min-height: calc(170px - 3vw) !important;
+                                }
+
+                                #page-header .primary .container {
+                                    flex-direction: column;
+                                }
+
+                                .primary .logo {
+                                    width: 100%;
+                                    background-size: 90%;
                                 }
                             }
 
@@ -1028,11 +1034,11 @@
 
                                 #sdg_banner ul.sdg_icons {
                                     width: 100%;
-                                    gap: 7px;
+                                    gap: 2px;
                                 }  
 
                                 .page-section-header-home-index {
-                                    min-height:  calc(290px - 3vw) !important;
+                                    min-height: calc(290px - 3vw) !important;
                                 }
                             }
                             
@@ -1075,7 +1081,8 @@
                                 }
 
                                 .page-section-header-home-index:not(.improvedLayout) {
-                                    background-size: 215%;
+                                    background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Campus_Photo_v6_small.png");
+                                    background-position: center -30px;
                                 }
 
                                 .page-section-header-home-index:not(.improvedLayout) .container {
@@ -1086,6 +1093,27 @@
                                     margin-left: unset !important;
                                     max-width: unset !important;
                                     box-shadow: 2px 2px 8px 0px #c230800d;
+                                    margin-bottom: -30px;
+                                    grid-template-columns: 1fr fit-content(100px);
+                                }
+
+                                .global-search .field-button-wrapper {
+                                    grid-template-columns: 1fr fit-content(20px);
+                                }
+
+                                #page-header .primary .container {
+                                        background: #DD1769;
+                                    }
+                                
+                                .logo {
+                                    background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_Reverse-_1_.png");
+                                    background-size: 100%;
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                }
+
+                                .logo img {
+                                    visibility: hidden;
                                 }
 
                                 .page-section .page-section-header {
@@ -1094,6 +1122,8 @@
                                     justify-content: flex-end;
                                     padding: 0;
                                     top: 0;
+                                    margin: 0 0 30px 0 !important;
+                                    border-radius: unset !important;
                                 }
                             }
                                 
