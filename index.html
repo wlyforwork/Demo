@@ -84,7 +84,7 @@
                 <a href="/pureportal/en/" class="logo">
                     
                         <span class="sr-only">CityU Scholars Home</span>
-                        <img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_RGB.jpg" alt="CityU Scholars Logo"/>
+                        <img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_transparent_BG.png" alt="CityU Scholars Logo"/>
                     
                 </a>
                 
@@ -143,9 +143,6 @@
     <div class="global-search-wrapper">
      <div class="header">
             <h1 class="title">
-                
-                Publications, projects and researchers
-                
             </h1>
         </div>
         <form id="main-search" action="/pureportal/en/searchAll/" method="get" class="search-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
@@ -614,6 +611,14 @@
                                 min-height: 300px !important;
                             }
 
+                            header {
+                                position: absolute;
+                                z-index: 1;
+                                width: 100%;
+                                height: 130px;
+                                background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+                            }
+
                             /*header#page-header::before { 
                                 position: absolute;
                                 content: '';
@@ -644,7 +649,7 @@
 
                             #page-header .primary ul.header-tools>li {
                                 border-radius: 5px;
-                                border: 1px solid #c219753b !important;
+                                box-shadow: 2px 2px 8px 0px #c230800d;
                             }
 
                             li.help-and-faq > a span, li.help-and-faq > a i, .language_btn, .page-section-header-home-index .container h1, .page-section-header-home-index .container .search-menu a, .page-section-header-home-index .container .search-menu a:visited {
@@ -665,14 +670,23 @@
                                 padding: 3px 10px;
                             }
 
+                            .primary .logo {
+                                width: 40%;
+                                /*background: linear-gradient(to right, rgba(255, 255, 255, 90%), rgba(255, 255, 255, 0));*/
+                            }
+
+
                             .primary .logo img {
                                 max-height: 88px;
-                                width: 90%;
+                                width: auto;
                                 margin-bottom: -10px;
+                                padding: 0 25px;
+                                border-bottom-right-radius: 5px;
                             }
 
                             .page-section-header-home-index.has-backdrop-image {
-                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Campus_Photo_v7.png");
+                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Campus_Photo_v10.png");
+                                background-position: ;
                             }
 
                             #page-header .primary {
@@ -686,6 +700,8 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
+                                padding-left: 0;
+                                padding-right:
                             }
 
                             #page-header .primary  .container:before, .container:after {
@@ -714,7 +730,7 @@
                                 width: 100%;
                                 min-width: unset !important;
                                 position: absolute;
-                                top: 205px;
+                                top: 238px;
                                 padding: 0;
                             }
 
@@ -748,22 +764,21 @@
                             }
 
                             .global-search-wrapper {
-                                max-width: 405px;
+                                max-width: 30%;
                                 height: fit-content;
                                 border-radius: 5px;
                                 padding: 10px;
                                 background: white;
-                                display: grid;
-                                grid-template-rows: 0.25fr 1fr;
-                                grid-template-columns: 1fr 0.45fr;
-                                column-gap: 15px;
+                                display: flex;
                                 align-items: center;
                                 box-shadow: 1px 2px 6px 0px #ffffff;
-                                margin-left: 433px
+                                margin-right: 25px;
+                                column-gap: 10px;
                             }
              
                             .global-search-wrapper > #main-search {
-                                margin-top: 10px;
+                                width: 75%;
+                                margin-top: 0;
                             }
 
                             .global-search-wrapper .header {
@@ -806,6 +821,7 @@
                             ul.search-menu {
                                 text-align: left;
                                 font-size: 14px;
+                                padding-top: 0;
                             }
 
                             /*Navigation Bar Layout*/
@@ -1185,7 +1201,7 @@
                                 border-top: 0;
                                 border-bottom: 0;
                                 border-radius: 5px;
-                                margin: 0 25px;
+                                /*margin: 0 25px;*/
                                 box-shadow: unset !important;
                                 /*box-shadow: 25px 25px 50px 0 white inset, 0px -20px 20px 0px white inset;*/
                             }
