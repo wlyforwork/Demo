@@ -1006,6 +1006,10 @@
                             }
 
                             @media screen and (max-width: 480px) {
+                                header {
+                                    margin-bottom: -9px;
+                                }
+                                
                                 header#page-header::before {
                                     top: 140px;
                                     height: 30vh;
@@ -1016,14 +1020,16 @@
                                 }
 
                                 #page-header .primary .container {
-                                    flex-direction: column;
+                                    flex-direction: column-reverse;
                                 }
 
                                 .primary .logo {
                                     width: 100%;
                                     background-size: 90%;
                                 }
+                            }
 
+                            @media screen and (max-width: 395px) {
                                 #sdg_banner > div.container {
                                     padding: 0;
                                 }
@@ -1034,6 +1040,12 @@
 
                                 #sdg_banner ul.sdg_icons {
                                     gap: 5px;
+                                    padding: 0 24px;
+                                }  
+                            }
+
+                            @media screen and (max-width: 373px) {
+                                #sdg_banner ul.sdg_icons {
                                     padding: 0 13px;
                                 }  
                             }
