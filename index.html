@@ -605,88 +605,69 @@
                                 display: none !important;
                             }
 
-                            /*Header Layout*/
+                            .global-search-wrapper .header {
+                                display: none;
+                            }
 
+                            /*Header Layout*/
+                                
                             .page-section-header-home-index {
-                                min-height: 300px !important;
+                                min-height: 350px !important;
                             }
 
                             header {
                                 position: absolute;
                                 z-index: 1;
                                 width: 100%;
-                                height: 130px;
-                                background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 70%), rgba(255, 255, 255, 0));
                             }
-
-                            /*header#page-header::before { 
-                                position: absolute;
-                                content: '';
-                                top: 110px;
-                                z-index: 100;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                height: 40vh;
-                                width: 100%;
-                                background: linear-gradient(271deg,#7c0378,#bf165e,#e47000);
-                                clip-path: polygon(0 0, 100% 0, 100% 4%, 0 9%);
-                            }*/
-
                             
                             #page-header .primary ul.header-tools {
                                 position: unset;
                                 margin-top: unset !important;
                                 margin-bottom: unset !important;
                                 display: flex;
-                                font-size: 0.95rem;
+                                font-size: 1.1rem;
                                 gap: 10px;
                             }
 
-                            li.language-dropdown.dropdown {
-                                align-content: end;
-                            }
-
                             #page-header .primary ul.header-tools>li {
-                                border-radius: 5px;
-                                box-shadow: 2px 2px 8px 0px #c230800d;
+                                background: none !important;
+                                border: unset !important;
                             }
 
-                            li.help-and-faq > a span, li.help-and-faq > a i, .language_btn, .page-section-header-home-index .container h1, .page-section-header-home-index .container .search-menu a, .page-section-header-home-index .container .search-menu a:visited {
+                            #page-header .primary ul.header-tools>li>a i, #page-header .primary ul.header-tools>li>a span, .page-section-header-home-index .container .search-menu a, .page-section-header-home-index .container .search-menu a:visited {
+                                color: white !important;
+                            }
+                            
+                            #page-header .primary ul.header-tools>li>a {
+                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/d2_Btn1.png");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: 100% 100%;
+                                text-align: center;
+                                align-content: center;
+                                padding: 17px 30px;
+                            }
+                            
+                            .language_btn, .page-section-header-home-index .container h1 {
                                 color: #c21975 !important;
                                 font-weight: bold;
                             }
 
-                            .global-search .search-field input {
-                                border: 1px solid #c219753b !important;
-                                color: #a42667 !important;
-                            }
-
-                            .global-search .search-submit button {
-                                background: #a42667 !important;
-                            }
-
-                            #page-header .primary ul.header-tools>li>a {
-                                padding: 3px 10px;
-                            }
-
                             .primary .logo {
-                                width: 40%;
-                                /*background: linear-gradient(to right, rgba(255, 255, 255, 90%), rgba(255, 255, 255, 0));*/
+                                max-height: 90px;
+                                width: auto;
+                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_Reverse-_1_.png") !important;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                margin-top: -10px;
+                                margin-left: -8px;
+                                margin-bottom: -10px;
                             }
-
 
                             .primary .logo img {
-                                max-height: 88px;
-                                width: auto;
-                                margin-bottom: -10px;
-                                padding: 0 25px;
-                                border-bottom-right-radius: 5px;
-                            }
-
-                            .page-section-header-home-index.has-backdrop-image {
-                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Campus_Photo_v10.png");
-                                background-position: ;
+                                visibility: hidden;
+                                max-height: 90px;
                             }
 
                             #page-header .primary {
@@ -694,27 +675,24 @@
                                 background-color: transparent !important;
                             }
 
+                            .page-section-header-home-index.has-backdrop-image {
+                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d2.png");
+                            }
+
                             #page-header .primary .container {
-                                max-width: 100% !important;
+                                max-width: 1337px;
+                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/d2_Bar.png");
+                                background-repeat: no-repeat !important;
+                                background-position: top center !important;
                                 position: unset !important;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
-                                padding-left: 0;
-                                padding-right:
+                                padding: 0 120px;
                             }
 
                             #page-header .primary  .container:before, .container:after {
                                 content: none !important;
-                            }
-
-                            #page-header .primary ul.header-tools {
-                                top: 0;
-                            }
-
-                            .page-section-header-home-index:not(.improvedLayout) {
-                                background-position: unset;
-                                justify-content: flex-start;
                             }
 
                             .page-section {
@@ -734,19 +712,6 @@
                                 padding: 0;
                             }
 
-                            /*section.page-section-header.page-section-header-home.page-section-header-home-index.has-backdrop-image::after { 
-                                content: '';
-                                position: absolute;
-                                left: 0;
-                                width: 0;
-                                height: 0;
-                                border-style: solid;
-                                border-width: 1.125rem 50vw .7rem 50vw;
-                                border-color: transparent #FFFF #FFFF transparent;
-                                z-index: 3;
-                                bottom: -5px;
-                            }*/
-
                             /*Header Layout - Search Bar*/
                             
                             .global-search {
@@ -754,74 +719,72 @@
                                 background: unset;
                             }
 
-                            .form-field, .global-search , .global-search .field-button-wrapper {
-                                box-shadow: unset !important;
-                            }
-
-
-                            .global-search .search-submit button:hover .icon {
-                                color: unset;
-                            }
-
                             .global-search-wrapper {
-                                max-width: 30%;
+                                max-width: 674px;
                                 height: fit-content;
-                                border-radius: 5px;
-                                padding: 10px;
-                                background: white;
                                 display: flex;
-                                align-items: center;
-                                box-shadow: 1px 2px 6px 0px #ffffff;
-                                margin-right: 25px;
-                                column-gap: 10px;
-                            }
-             
+                                align-items: flex-start;
+                                flex-direction: column;
+                                row-gap: 6px;
+                            }    
+
                             .global-search-wrapper > #main-search {
-                                width: 75%;
+                                width: 100%;
                                 margin-top: 0;
                             }
 
-                            .global-search-wrapper .header {
-                                display: grid;
-                                grid-area: 1 / 1 / 1 / 3;
+                            .global-search .search-field {
+                                width: 100%;
+                                border-radius: 7px 2px 2px 7px;
+                                height: 41px !important;
+                            }
+
+                            .global-search .search-field input {
+                                color: #a42667 !important;
+                            }
+
+                            .search-field, .global-search .search-submit button {
+                                box-shadow: 1px 2px 6px 0px #ffffff !important;
                             }
 
                             .global-search .field-button-wrapper {
                                 display: grid !important;
                                 grid-template-columns: 1.5fr 0.1fr;
-                                column-gap: 5px;
-                            }
-
-                            .global-search .search-field {
-                                width: 100%;
-                                border-radius: 2px;
                             }
                                 
                             .global-search .search-submit {
-                                width: unset;
-                            }
-
-                            .page-section-header-home-index {
-                                text-align: left;
-                            }
-
-                            .global-search .search-field input, .global-search .search-submit button, .global-search .field-button-wrapper {
-                                max-height: 25px;
+                                width: 100% !important;
                             }
 
                             .global-search .search-submit button {
-                                background: #484d47;
+                                background: #a42667 !important;
                                 color: unset;
-                                border-radius: 2px;
+                                border-radius: 2px 7px 7px 2px;
                                 padding: 5px;
-                                margin: unset;
-                                font-size: 16px;
+                                margin: 0 0 0 -2px;
+                                font-size: 20px;
+                                width: 100%;
+                                height: 100%;
+                                justify-content: center;
                             }
-                            
+
+                            .global-search .search-submit button:hover .icon {
+                                color: unset;
+                            }
+
+                            .page-section-header-home-index .container .search-menu a, .page-section-header-home-index .container .search-menu a {
+                                font-size: 1.345rem;
+                                padding-left: 3px;
+                            }
+
                             ul.search-menu {
                                 text-align: left;
                                 font-size: 14px;
                                 padding-top: 0;
+                            }
+
+                            .page-section-header-home-index {
+                                text-align: left;
                             }
 
                             /*Navigation Bar Layout*/
@@ -989,13 +952,18 @@
                             #sdg_banner ul.sdg_icons {
                                 width: 100%;
                                 gap: 13px;
+                                display: grid !important;
+                                grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+                                justify-items: center;
                             }  
+
+                            #sdg_banner ul.sdg_icons>li {
+                                width: 100% !important;
+                            }
 
                             #sdg_banner ul.sdg_icons>li img {
                                 width: 100%;
-                                max-width: 110px;
                                 height: 100%;
-                                max-height: 100%;
                                 border-radius: 5px;
                             }
 
@@ -1015,10 +983,6 @@
                                 section.page-section-header-home-index {
                                     min-height: calc(245px - 8vw) !important;
                                 }
-
-                                #sdg_banner ul.sdg_icons {
-                                    gap: 8px;
-                                }  
                             }
 
                             @media screen and (max-width: 480px) {
@@ -1045,46 +1009,15 @@
                                 }
                             }
 
-                            @media screen and (max-width: 395px) {
-                                #sdg_banner > div.container {
-                                    padding: 0;
-                                }
-
-                                .sdg_info {
-                                    padding: 0 25px;
-                                }
-
-                                #sdg_banner ul.sdg_icons {
-                                    gap: 5px;
-                                    padding: 0 24px;
-                                }  
-                            }
-
-                            @media screen and (max-width: 373px) {
-                                #sdg_banner ul.sdg_icons {
-                                    padding: 0 13px;
-                                }  
-                            }
-
                             @media only screen and (max-width: 720px) {
                                 .primary .logo img {
-                                    max-width: unset !important;
-                                    max-height: 88px !important;
+                                    max-width: unset !important;=
                                     height: unset !important;
                                 }
                                 
                                 header#page-header::before {
                                     top: 120px;
                                 }
-
-                                #sdg_banner ul.sdg_icons {
-                                    width: 100%;
-                                }  
-
-                                #sdg_banner ul.sdg_icons>li {
-                                    width: unset !important;
-                                }
-
                                 .page-section-header-home-index {
                                     min-height: calc(290px - 3vw) !important;
                                 }
@@ -1128,11 +1061,6 @@
                                     bottom: 45px;
                                 }
 
-                                .page-section-header-home-index:not(.improvedLayout) {
-                                    background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Campus_Photo_v6_small.png");
-                                    background-position: center -30px;
-                                }
-
                                 .page-section-header-home-index:not(.improvedLayout) .container {
                                     position: unset !important;
                                 }
@@ -1149,21 +1077,6 @@
                                     grid-template-columns: 1fr fit-content(20px);
                                 }
 
-                                #page-header .primary .container {
-                                        background: #DD1769;
-                                    }
-                                
-                                .logo {
-                                    background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_Reverse-_1_.png");
-                                    background-size: 100%;
-                                    background-repeat: no-repeat;
-                                    background-position: center center;
-                                }
-
-                                .logo img {
-                                    visibility: hidden;
-                                }
-
                                 .page-section .page-section-header {
                                     display: flex;
                                     flex-direction: column;
@@ -1171,7 +1084,9 @@
                                     padding: 0;
                                     top: 0;
                                     margin: 0 0 30px 0 !important;
-                                    border-radius: unset !important;
+                                    border-top: 0;
+                                    border-bottom: 0;
+                                    box-shadow: unset !important;
                                 }
                             }
                                 
@@ -1196,16 +1111,6 @@
                             .page-section-content-home-index .secondary nav.content-navigation {
                                 padding: 20px 0 !important;
                             }
-
-                            .page-section .page-section-header {
-                                border-top: 0;
-                                border-bottom: 0;
-                                border-radius: 5px;
-                                /*margin: 0 25px;*/
-                                box-shadow: unset !important;
-                                /*box-shadow: 25px 25px 50px 0 white inset, 0px -20px 20px 0px white inset;*/
-                            }
-
 
                             section.page-section-header-home-index .container {
                                 background: none !important;
