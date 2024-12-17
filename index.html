@@ -601,12 +601,13 @@
                                 height: 20px;
                             }
 
-                            .language-dropdown {
+                            .language-dropdown, .global-search-wrapper .header {
                                 display: none !important;
                             }
-
-                            .global-search-wrapper .header {
-                                display: none;
+                            
+                            .page-section {
+                                border-bottom: 0 !important;
+                                padding-bottom: 20px !important;
                             }
 
                             /*Header Layout*/
@@ -705,10 +706,6 @@
 
                             #page-header .primary  .container:before, .container:after {
                                 content: none !important;
-                            }
-
-                            .page-section {
-                                margin-top: 20px;
                             }
 
                             .page-section-header-home-index:not(.improvedLayout) .container .global-search-wrapper:not(.improvedLayout) {
@@ -825,10 +822,13 @@
                                 justify-content: space-between;
                             }
 
+                            .page-section-content-home-index .secondary {
+                                border-bottom: 0 !important;
+                            }
+                            
                             /*Content Layout*/
 
                             .page-section .welcome {
-                                padding: 20px 0 !important;
                                 margin-top: 0 !important;
                             }
 
@@ -942,7 +942,7 @@
 
                             .btnText {
                                 position: relative;
-                                bottom: 45px;
+                                bottom: 44px;
                                 background: #981f61ba;
                                 padding: 5px;
                                 border-radius: 0 0 5px 5px;
@@ -960,6 +960,10 @@
                             #sdg_banner > div.container {
                                 display: flex;
                                 flex-direction: column;
+                            }
+
+                            .sdg_banner h2 {
+                                font-size: 1.8rem;
                             }
 
                             #sdg_banner .sdg_info {
@@ -1112,7 +1116,7 @@
                             
                             @media (min-width: 481px) and (max-width: 945px) {
                                 .btnText {
-                                    bottom: 45px;
+                                    bottom: 54px;
                                 }            
                             }
 
