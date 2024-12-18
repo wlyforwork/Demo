@@ -84,7 +84,7 @@
                 <a href="/pureportal/en/" class="logo">
                     
                         <span class="sr-only">CityU Scholars Home</span>
-                        <img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_transparent_BG.png" alt="CityU Scholars Logo"/>
+                        <img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_Reverse-white.png" alt="CityU Scholars Logo"/>
                     
                 </a>
                 
@@ -614,6 +614,7 @@
                                 
                             .page-section-header-home-index {
                                 min-height: 350px !important;
+                                transition: min-height 0.1s ease-in-out;
                             }
 
                             header {
@@ -669,16 +670,12 @@
                             .primary .logo {
                                 max-height: 90px;
                                 width: auto;
-                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_Reverse-_1_.png") !important;
-                                background-size: contain;
-                                background-repeat: no-repeat;
                                 margin-top: -9px;
                                 margin-left: -8px;
                                 margin-bottom: -10px;
                             }
 
                             .primary .logo img {
-                                visibility: hidden;
                                 max-height: 90px;
                             }
 
@@ -719,6 +716,7 @@
                                 position: absolute;
                                 top: 238px;
                                 padding: 0;
+                                transition: top 0.3s ease-in-out;
                             }
 
                             /*Header Layout - Search Bar*/
@@ -1037,12 +1035,11 @@
 
                                 #page-header .primary {
                                     background-image: none !important;
-                                }
+                                }           
 
-                                #page-header .primary .logo {
-                                    margin-left: -20px;
+                                .primary .logo {
+                                    margin-top: 0;
                                 }
-                                
                                 
                                 #page-header .primary ul.header-tools {
                                     padding: 4px;
@@ -1132,7 +1129,7 @@
 
                             @media only screen and (max-width: 720px) {
                                 #page-header .primary .logo img {
-                                    max-height: inherit !important;
+                                    max-height: 75px !important;
                                     height: unset !important;
                                 }
                                 .page-section-header-home-index {
